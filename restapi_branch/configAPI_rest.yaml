@@ -1,0 +1,5 @@
+# Modify this YAML file to change the values for host, port, endpoint_name when executing a request HTTP via API
+api:
+  host: "0.0.0.0"
+  port: 5000
+  endpoint_name: "active_calls"

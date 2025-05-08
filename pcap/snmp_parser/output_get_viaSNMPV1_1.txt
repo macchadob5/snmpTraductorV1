@@ -1,0 +1,5 @@
+[root@telemetry snmp_branch]# python3 get_viaSNMPV1_1.py
+Output from NE via SNMP: SNMPv2-SMI::enterprises.2858.500.4.1.0 = INTEGER: 100
+active_calls: 100
+Timestamp: 2025-05-07T21:14:41.367Z
+Parsed SNMP: {'OID': 'SNMPv2-SMI::enterprises.2858.500.4.1.0', 'TYPE': 'INTEGER', 'VALUE': '100', 'TIMESTAMP': '2025-05-07T21:14:41.367Z'}

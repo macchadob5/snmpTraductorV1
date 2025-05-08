@@ -1,0 +1,10 @@
+# Modify this YAML file to change the values for host, community, oid, etc. of the Network Element (NE)
+snmp:
+  host: "201.229.39.92"
+  community: "setar"
+  version: "2c"
+  oid: ".1.3.6.1.4.1.2858.500.4.1.0" # OID for active_calls
+  #oid: ".1.3.6.1.4.1.2858.500.6.1.0" #OID for NE version
+  metric_name: "active_calls"
+  command: "snmpwalk"
+

@@ -1,0 +1,3 @@
+[root@master-node ~]# curl http://192.168.100.171:5000/active_calls
+{"metric":"active_calls","sourceOID":"SNMPv2-SMI::enterprises.2858.500.4.1.0","timestamp":"2025-05-07T21:27:59.741Z","value":79}
+

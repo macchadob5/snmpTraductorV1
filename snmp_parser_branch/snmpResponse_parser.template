@@ -1,0 +1,7 @@
+# Template used by TextFSM to extract values from the SNMP response (such as OID, TYPE, VALUE) using regex
+Value OID (\S+)
+Value TYPE (\w+)
+Value VALUE (\d+)
+
+Start
+  ^${OID}\s+=\s+${TYPE}:\s+${VALUE} -> Record
