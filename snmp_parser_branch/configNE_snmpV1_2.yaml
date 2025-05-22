@@ -1,0 +1,42 @@
+#
+# YAML file to add/modify the Network Elements (NEs) to be pulled via SNMP
+#
+# Server: Telemetry server (192.168.100.171)
+# Script location: /home/uba/snmp_parser_branch
+# Logs location:
+# Release: 03-04-2025 (V1)
+# Current Version: V1_2            Release: 13-05-2025
+    # Implementation for multiple NEs and OIDs V1_2
+    # Implementatioin for one NE and OID V1_1
+
+
+# Section to add/modify the values for NAME, HOST, COMMUNITY, OID, etc. of the NEs
+snmp_NE:
+  - name: Softswitch-C5CMWholesaleORS
+    host: "201.229.39.92"
+    community: "setar"
+    version: "2c"
+    command: "snmpwalk"
+    oids:
+      - oid: ".1.3.6.1.4.1.2858.500.4.1.0" # OID for active_calls
+        metric_name: "active_calls"
+      # oid: ".1.3.6.1.4.1.2858.500.6.1.0" #OID for NE version
+      # metric_name: "ne_version"
+  - name: STP-SNC
+    host: "10.241.0.26"
+    community: "svi"
+    version: "2c"
+    command: "snmpwalk"
+    oids:
+      - oid: ".1.3.6.1.4.1.44633.1.1.35.1.1.12.71" # OID for AspRxMsgTotal -- SBLHSS01_1_Pref
+        metric_name: "AspRxMsgTotal_SBLHSS01_1_Pref"
+      - oid: ".1.3.6.1.4.1.44633.1.1.35.1.1.9.71" # OID for AspTxMsgTotal -- SBLHSS01_1_Pref
+        metric_name: "AspTxMsgTotal_SBLHSS01_1_Pref"
+  - name: Softswitch-C5CMWholesaleSNC
+    host: "10.241.0.16"
+    community: "setar"
+    version: "2c"
+    command: "snmpwalk"
+    oids:
+      - oid: ".1.3.6.1.4.1.2858.500.4.1.0" # OID for active_calls
+        metric_name: "active_calls"

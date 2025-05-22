@@ -1,0 +1,5 @@
+[root@telemetry snmp_parser_branch]# python3 get_viaSNMPV1_2.py
+Parsed SNMP: {'NAME': 'Softswitch-C5CMWholesaleORS', 'HOST': '201.229.39.92', 'OID': 'SNMPv2-SMI::enterprises.2858.500.4.1.0', 'METRIC': 'active_calls', 'TYPE': 'INTEGER', 'VALUE': '104', 'TIMESTAMP': '2025-05-22T14:34:15.936Z'}
+Parsed SNMP: {'NAME': 'STP-SNC', 'HOST': '10.241.0.26', 'OID': 'SNMPv2-SMI::enterprises.44633.1.1.35.1.1.12.71', 'METRIC': 'AspRxMsgTotal_SBLHSS01_1_Pref', 'TYPE': 'Gauge32', 
+Parsed SNMP: {'NAME': 'STP-SNC', 'HOST': '10.241.0.26', 'OID': 'SNMPv2-SMI::enterprises.44633.1.1.35.1.1.9.71', 'METRIC': 'AspTxMsgTotal_SBLHSS01_1_Pref', 'TYPE': 'Gauge32', 
+Parsed SNMP: {'NAME': 'Softswitch-C5CMWholesaleSNC', 'HOST': '10.241.0.16', 'OID': 'SNMPv2-SMI::enterprises.2858.500.4.1.0', 'METRIC': 'active_calls', 'TYPE': 'INTEGER', 'VALUE': '96', 'TIMESTAMP': '2025-05-22T14:34:16.607Z'}
